@@ -1,0 +1,31 @@
+.Holy {
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+}
+
+header, footer {
+	flex: 1;
+	text-align: center;
+}
+
+.Holy-body {
+	display: flex;
+	flex: 3;
+	text-align: center;
+}
+
+.Holy-content {
+	flex: 1;
+	text-align: center;
+}
+
+.Holy-nav , .Holy-ads{
+	flex: 0 0 12em;
+	text-align: center;
+}
+
+.Holy-nav {
+	order: -1;
+	text-align: center;
+}

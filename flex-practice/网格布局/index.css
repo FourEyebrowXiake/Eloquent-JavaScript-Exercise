@@ -1,0 +1,21 @@
+.Grid {
+	display: flex;
+}
+
+.Grid-cell {
+	flex: 1;
+	background-color: white;
+	text-align: center;
+}
+
+.Grid-cell.u-1of4 {
+	flex: 0 0 25%;
+	background-color: red;
+	text-align: center;
+}
+
+.Grid-cell.u-1of3 {
+	flex: 0 0 33.33%;
+	background-color: black;
+	text-align: center;
+}

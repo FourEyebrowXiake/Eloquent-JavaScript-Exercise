@@ -1,0 +1,15 @@
+.gallery {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+}
+
+img {
+  width: 200px;
+  height: 190px;
+  margin: 10px;
+  box-shadow: 4px 7px 45px -10px rgba(0,0,0,0.4);
+  border-radius: 7 px;
+}
