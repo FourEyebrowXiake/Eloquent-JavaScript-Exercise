@@ -1,3 +1,6 @@
+
+
+
 var obj = {
 	value : '1',
 	left : {
@@ -28,4 +31,35 @@ var obj = {
 	}
 }
 
-console.log(obj);
+
+
+function traverse(node) {
+  var arry = [];
+  var queue = [];
+
+  var tmp = node;
+  var last = node;
+  var nlast = null;
+
+  queue.push(tmp);
+  while(queue.length!=0) {
+    tmp = queue.pop();
+    arry.push(tmp)
+
+    if(tmp.left) {
+      queue.push(tmp.left);
+      nlast = tmp.left;
+    }
+
+    if(tmp.right) {
+        queue.push(tmp.rights);
+      nlast = tmp.right;
+    }
+    if(tmp = last) {
+      last = nlast;
+    }
+  }
+  return arry;
+}
+
+console.log(traverse(obj));
