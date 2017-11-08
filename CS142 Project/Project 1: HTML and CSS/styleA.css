@@ -1,0 +1,41 @@
+.list {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-direction: column;
+	flex-wrap: nowrap;
+}
+
+.list > :last-child{
+	border: 4px solid black;
+	background-color: #687291;
+	justify-content: center;
+	align-items: center;
+}
+
+.list-item {
+	display: flex;
+	width: 100px;
+	height: 100px;
+	border-top: 1px solid #687291;
+	justify-content: center;
+	align-items: flex-start;
+}
+
+.odd {
+	background-color: #dfe1e7;
+}
+
+.even {
+	background-color: #eeeff2;
+}
+
+
+.char {
+	font-size: 40px;
+
+}
+
+.fill-viewport {
+  min-height: 100vh
+}
